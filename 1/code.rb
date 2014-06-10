@@ -1,5 +1,11 @@
+# Module VS module
+Class.ancestors
+Module.respond_to? :new
+module M; end
+M.respond_to?:new?
 
-
+# =======================================================================
+# Scope
 class A
   a = '1'
   class << self
