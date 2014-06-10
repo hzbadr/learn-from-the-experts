@@ -1,3 +1,5 @@
+
+
 class A
   a = '1'
   class << self
@@ -15,5 +17,5 @@ end
 
 # empty result
 
-
+#How to fix?  => flas scope using class_eval & instance_eval
 # =======================================================================
