@@ -25,3 +25,22 @@ end
 
 #How to fix?  => flas scope using class_eval & instance_eval
 # =======================================================================
+
+class Person; end
+class << Person
+  def name
+    puts 'name << name'
+  end
+end
+
+Person.new.name
+Person.name
+
+Person.class_eval do
+  def name
+    puts 'name class_eval name'
+  end
+end
+
+Person.name
+Person.new.name
